@@ -11,13 +11,19 @@ public class Creature {
     public int maxValue = 30;
 
     // Metoder
-    public void playChess(){
-        //jj (return int later)
+    public int playChess(){
+        int result = genRandom.nextInt(0, maxValue);
+        int endResult = result + intelligence;
+        return endResult;
     }
-    public void fight(){
-        //jj (return int later)
+    public int fight(){
+        int result = genRandom.nextInt(0, maxValue);
+        int endResult = result + strength + endurance;
+        return endResult;
     }
-    public void armWrestling(){
-        //jj (return int later)
+    public int armWrestling(){
+        int result = genRandom.nextInt(0, maxValue);
+        int endResult = result + strength;
+        return endResult;
     }
 }
